@@ -16,7 +16,6 @@ function sum(a, b) { //eslint-disable-line
 }
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
-console.log (sum())
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
@@ -53,11 +52,18 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+let q3sum = sum(a, b)[0];
+let q3Sum2 = sum(q3sum, c)[0]
+ let q3Product = multiply(a, b,)[0];
+ let q3Product2 = multiply(q3Product, c)[0];
+let q3Sumtotal = a + " and " + b + " and " + c + " sum to " + q3Sum2 + ".";
+let q3ProductTotal = "The product of " + a + " and " + b + " and " + c + " is " + q3Product2 + ".";
+let q3Answer = [q3Sum2, q3Product2, q3Sumtotal, q3ProductTotal];
+return q3Answer;
 }
-
+console.log(sumAndMultiply(4,7,5))
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
