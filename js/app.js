@@ -82,11 +82,21 @@ let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
 
-}
+// for the first element create variable that uses sum function for the sumArr argument
+let first = sumArr[0]
+let second = sumArr[1]
+let third = sumArr[2]
+let fourth =  second + third
+let firstElement = (sum(first,fourth)[0]);
+let secondElement = sumArr + " was passed in as an array of numbers, and " + firstElement + " is their sum."
 
+let q4answer = [firstElement,secondElement];
+    return q4answer
+}
+console.log(sumArray(testArray))
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
